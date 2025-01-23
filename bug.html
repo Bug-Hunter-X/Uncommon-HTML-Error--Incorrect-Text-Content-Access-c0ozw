@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error</title>
+</head>
+<body>
+  <div id="myDiv">
+    This is some text.
+  </div>
+  <script>
+    // Incorrect way to access an element's text content
+    let text = document.getElementById("myDiv").textContent = "New text";
+    console.log(text); //This will log "New text", not the original text
+  </script>
+</body>
+</html>
