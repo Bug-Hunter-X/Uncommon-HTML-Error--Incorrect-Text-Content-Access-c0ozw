@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This is some text.
+  </div>
+  <script>
+    // Correct way to access and modify an element's text content
+    let myDiv = document.getElementById("myDiv");
+    let originalText = myDiv.textContent;
+    myDiv.textContent = "New text";
+    console.log(originalText); //This will now correctly log the original text
+  </script>
+</body>
+</html>
